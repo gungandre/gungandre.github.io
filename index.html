@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="judul"><h1>Bookself Apps</h1></div>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Masukkan Buku Baru</h2>
+        <form action="#" class="form" id="form">
+          <div class="inputJudul">
+            <label for="judulBuku">Judul <br /> </label>
+            <input type="text" id="judulBuku" name="judulBuku" required />
+          </div>
+          <div class="inpuPenulis">
+            <label for="penulis">Penulis <br /></label>
+            <input type="text" id="penulis" name="penulis" required />
+          </div>
+          <div class="inputTahun">
+            <label for="tahun">Tahun <br /></label>
+            <input type="text" id="tahun" onkeypress="return event.charCode >= 48 && event.charCode <=57" required />
+          </div>
+          <p>Selesai Di Baca <input type="checkbox" name="checkbox" class="checkbox" id="checkbox" /></p>
+          <input type="submit" value="Submit" name="Submit" class="submitText" />
+        </form>
+      </div>
+      <div class="caribuku">
+        <h2 align="center">Cari Buku</h2>
+
+        <form action="#" class="searchBook">
+          <label for="search" class="a"><h4>Judul</h4></label>
+          <input type="text" id="search" name="search" required />
+          <input type="submit" id="submitsearch" name="submitsearch" />
+          <input type="submit" value="Clear" class="clearsubmit" />
+        </form>
+      </div>
+      <div class="belumDibaca">
+        <h2 align="center">Belum Selesai Di Baca</h2>
+        <div class="belum"></div>
+      </div>
+      <div class="selesaiDibaca">
+        <h2 align="center">Selesai Di Baca</h2>
+        <div class="sudah"></div>
+      </div>
+
+      <script src="js/script.js"></script>
+    </main>
+  </body>
+</html>
